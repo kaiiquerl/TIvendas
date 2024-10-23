@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TIvendas</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Smartphones</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Laptops</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Acessórios</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Tablets</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Wearables</a>
+        </li>
+      </ul>
+      <img src="img/logo.png" alt="Logo da TechZone" class="container__imagem1">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinho de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Explore a tecnologia do futuro!</h2>
+    <p class="banner__texto">Encontre os melhores produtos eletrônicos a preços imbatíveis!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual eletronico você está procurando?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos Lançamentos</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/iphone14.png" alt="iPhone 14 da TechZone"></div>
+        <div class="swiper-slide"><img src="img/macbook.png" alt="MacBook Pro 2023 da TechZone"></div>
+        <div class="swiper-slide"><img src="img/S23.png" alt="Samsung Galaxy S23 da TechZone"></div>
+        <div class="swiper-slide"><img src="img/watch.png" alt="Apple Watch Series 8 da TechZone" /></div>
+        <div class="swiper-slide"><img src="img/surface.png" alt="Microsoft Surface Pro 9 da TechZone" /></div>
+        <div class="swiper-slide"><img src="img/fones.png" alt="Fones de ouvido sem fio da TechZone" /></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+          <h2 class="descrição__titulo-livro">Samsung Galaxy Tab S8</h2>
+          <p class="descrição__texto">
+            Um tablet poderoso para produtividade e entretenimento.
+          </p>
+        </div>
+        <img src="img/tablet.jpg" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar produto" />
+          </li>
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Mais Vendidos</h2>
+    <div class="swiper">
+      <div class="swiper-pagination"></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/smartwatch.png" alt="Smartwatch da TechZone"></div>
+        <div class="swiper-slide"><img src="img/applemaack.png" alt="Laptop Lenovo Ideapad da TechZone"></div>
+        <div class="swiper-slide"><img src="img/fonea.png" alt="Fones Beats da TechZone"></div>
+        <div class="swiper-slide"><img src="img/airpods.png" alt="AirPods da TechZone"></div>
+        <div class="swiper-slide"><img src="img/xbox.png" alt="Console Xbox Series X da TechZone"></div>
+        <div class="swiper-slide"><img src="img/iphone13.png" alt="Kindle Paperwhite da TechZone"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Produto do Mês</h3>
+          <h2 class="descrição__titulo-livro">Dell XPS 13</h2>
+          <p class="descrição__texto">Um laptop premium com desempenho excepcional.</p>
+        </div>
+        <img src="img/xps.jpg" class="descrição__imagem">
+      </div>
+
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar produto"></li>
+          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Novidades em Smartphones</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Dicas de Laptops</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Melhores Acessórios</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Tablets em Promoção</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Wearables Incríveis</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+    <p class="contato__texto">
+      Atualizações sobre lançamentos, promoções e muito mais.
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+.tópicos {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    text-align: center;
+    padding: 1.5em 0;
+    color: #ffffff;
+}
+
+.tópicos__titulo {
+    color: #38bdf8; /* Azul claro para dar destaque ao título */
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 1.5em;
+    text-transform: uppercase; /* Títulos em caixa alta para reforçar o impacto */
+}
+
+.tópicos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tópicos__item {
+    margin: 1.5em 1em;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.tópicos__link {
+    color: #ffffff;
+    padding: 1em 1.5em;
+    background-color: #3b82f6; /* Azul vibrante para os botões */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 25px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tópicos__link:hover {
+    background-color: #1e40af; /* Azul mais escuro no hover */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2); /* Sombra mais forte no hover */
+    transform: translateY(-5px); /* Leve elevação no hover */
+}

@@ -1,0 +1,73 @@
+.cabeçalho {
+    background-color: var(--branco); /* Mantém a cor de fundo branca */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em; /* Adiciona espaçamento interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
+    position: relative;
+    z-index: 100; /* Garante que o header esteja sobreposto aos demais elementos */
+}
+
+.cabeçalho__menu-hamburguer {
+    width: 32px; /* Aumenta o ícone para maior visibilidade */
+    height: 32px;
+    display: inline-block;
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer; /* Adiciona o cursor de clique */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 1em;
+}
+
+.container__imagem1 {
+    padding: 1em;
+    width: 80px; /* Ajusta o tamanho da imagem/logo */
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0; /* Posiciona o menu à esquerda */
+    width: 100vw; /* Faz o menu ocupar toda a largura */
+    background-color: var(--branco); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+}
+
+.container__botao:checked ~ .lista-menu {
+    display: block;
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+    padding: 1em 2em; /* Ajuste de espaçamento */
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo {
+    color: var(--laranja); /* Cor de destaque para o título */
+    font-weight: 700;
+}
+
+.lista-menu__link {
+    background: var(--azul-degrade); /* Mantém o gradiente */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    font-weight: 600; /* Deixa o texto mais espesso */
+    letter-spacing: 0.1em; /* Adiciona espaçamento entre as letras */
+}
+
+.container__botao {
+    display: none;
+}
